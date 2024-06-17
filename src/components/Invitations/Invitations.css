@@ -1,0 +1,59 @@
+.invitations {
+  margin: 1em;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.invitations h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333; 
+}
+
+.invitations-list {
+  height: 60vh; /* Adjust height as needed */
+  overflow-y: auto; /* Scroll if content exceeds height */
+  margin-top: 20px;
+}
+
+.invitations-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.invitations-list li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.invitations-list p {
+  margin-bottom: 10px;
+  color: #333; /* Dark text */
+}
+
+.invitations-list button {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.invitations-list button:hover {
+  background-color: #000000; /* Darker shade on hover */
+}
+
+.invitations-list p.no-invitations {
+  text-align: center;
+  color: #777777;
+}

@@ -1,0 +1,81 @@
+.navbar {
+  width: 100%;
+  background-color: #1E90FF; /* Light blue sky background */
+  color: #fff; /* Text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.hamburger {
+  display: none; /* Initially hide for larger screens */
+  cursor: pointer;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #FFD700; /* Yellow on hover */
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #9c2c77 0%,
+    #cd104d 51%,
+    #e14d2a 100%
+  );
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+}

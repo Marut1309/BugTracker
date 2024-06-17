@@ -1,0 +1,158 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+h1 {
+  font-size: 2rem; /* Larger heading */
+  text-align: center;
+  color: #333; /* Dark gray text */
+  margin-bottom: 1rem;
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Increased letter spacing */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take full height of container */
+  overflow-y: auto; /* Scroll if content exceeds height */
+  background-color: #fff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  padding: 1rem;
+}
+
+.issue-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.issue-summary .max-w-lg {
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.issue-summary .max-w-lg h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.issue-summary .max-w-lg .donut-chart-container {
+  height: 200px;
+}
+
+.ticket-activity {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.open-tickets,
+.recent-activity {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.open-tickets h2,
+.recent-activity h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.open-tickets ul,
+.recent-activity ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.open-tickets li,
+.recent-activity li {
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.open-tickets li:last-child,
+.recent-activity li:last-child {
+  border-bottom: none;
+}
+
+.ticket-list {
+  max-height: 300px; /* Limit height and add scrollbar if needed */
+  overflow-y: auto;
+}
+
+.time-tracking {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.time-tracking h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.time-tracking p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.time-tracking button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.time-tracking button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+@media screen and (max-width: 900px) {
+  .issue-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .ticket-activity {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    padding: 0.5rem;
+  }
+
+  .issue-summary .max-w-lg {
+    padding: 0.5rem;
+  }
+
+  .ticket-activity {
+    padding: 0.5rem;
+  }
+
+  .time-tracking {
+    padding: 0.5rem;
+  }
+}

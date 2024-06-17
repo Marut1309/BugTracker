@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #1e3d59; /* Dark blue */
+  --secondary-color: #f0f0f0; /* Light gray */
+  --neobrutal-base-color: #3282b8; /* Dark cyan */
+  --neobrutal-accent-color-one: #5e8b7e; /* Greenish gray */
+  --neobrutal-accent-color-two: #f1d302; /* Yellow */
+  --neobrutal-accent-color-three: #ea5e3d; /* Orange */
+}
+
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-color); /* Dark blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-up-container {
+  width: 400px;
+  padding: 40px;
+  background-color: var(--secondary-color); /* Light gray */
+  color: var(--primary-color); /* Dark blue */
+  border: 4px solid var(--primary-color); /* Dark blue */
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+  color: var(--primary-color); /* Dark blue */
+}
+
+.title img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color); /* Dark blue */
+  outline: none;
+  color: var(--primary-color); /* Dark blue */
+}
+
+input:focus {
+  border: 1px solid var(--neobrutal-accent-color-one); /* Greenish gray */
+}
+
+.form-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    var(--neobrutal-accent-color-three) 0%,
+    var(--neobrutal-accent-color-two) 51%,
+    var(--neobrutal-accent-color-one) 100%
+  );
+  text-align: center;
+  font-weight: bolder;
+  transition: background-position 0.3s ease;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 0.5em auto;
+}
+
+.form-button:hover {
+  background-position: right center;
+}
+
+.form-footer {
+  margin-top: 20px;
+}
+
+.form-switch {
+  background-image: linear-gradient(
+    to right,
+    var(--neobrutal-base-color) 0%,
+    var(--neobrutal-accent-color-one) 51%,
+    var(--neobrutal-accent-color-two) 100%
+  );
+  text-align: center;
+  font-weight: bolder;
+  transition: background-position 0.3s ease;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-switch:hover {
+  background-position: right center;
+}
